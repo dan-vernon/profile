@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {background-color: #222831;
+color: #eeeeee;
+font-family: 'Open Sans', sans-serif;}
+
+h1, h2, h3 {
+  color: #00adb5;
+}
+
+h1 { font-size: 64px;
+  letter-spacing: 8px;
+}
+
+h2 { font-size: 48px;
+  letter-spacing: 4px;
+}
+
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.banner-content {
+  text-transform: capitalize;
+}
+
+.grid-container {
+  height: 80vh;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: 16fr 10fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "left1 right1" "left2 right2" "left3 right3";
+}
+
+.left1 { grid-area: left1; background-color: #393e46}
+
+.left2 { grid-area: left2; background-color: #00adb5}
+
+.left3 { grid-area: left3; background-color: #eeeeee }
+
+.right1 { grid-area: right1; }
+
+.right2 { grid-area: right2; }
+
+.right3 { grid-area: right3; }

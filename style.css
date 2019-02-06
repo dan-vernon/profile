@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin');
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -20,21 +21,94 @@
 }
 
 
+.grid-container {
+  margin: 0 auto;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: 10fr 16fr;
+  grid-template-areas: "banner" "body";
+}
+
+.fa-rocket {
+  font-size:  5em;
+}
+
+.top-right {
+  position: absolute;
+  top: 12px;
+  right: 12px
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 12px;
+  left: 12px
+}
+
+.send-right {
+  margin-left: 80%;
+}
+
+.banner {
+  position: relative;
+  grid-area: banner;
+  background-color: #eaffd050;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+
+.avatar-circle {
+  position: relative;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-color: #f3818180;
+}
+
+.fa-user-astronaut {
+  color: #95e1d3;
+  font-size: 8em;
+}
+
+.avatar-circle h1 {
+  font-size: 2em;
+  position: absolute;
+  left: 12%;
+  top: 12%;
+}
+
+.avatar-circle i {
+  position: absolute;
+  left: 70%;
+  top: 70%;
+}
+
+
+.body { grid-area: body;
+background-color: #fce38a50;
+height: 62vh;
+  padding: 8px;
+}
+
+
 body {
-  background-color: #D4D9C1;
-  font-family: 'Alegreya Sans', sans-serif;
-  color: #2C3540;
+  background-color: #fcf9ed;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #665c84;
   font-size: 20px;
   line-height: 2em;
 }
 
 h1, h2 {
-  color: #04050D
+  color: #f38181
 }
 
 h1 {
-  font-family: 'Alegreya', serif;
-  font-size: 1.5em;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  text-transform: capitalize;
 }
 
 h2 {
